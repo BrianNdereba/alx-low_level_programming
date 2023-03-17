@@ -8,15 +8,15 @@
 
 int main(void)
 {
-	int i, j;
+	int a, b;
 
-	for (i = 0; i < 10; i++)
+	for (a = 0; a < 10; a++)
 	{
-	for (j = i + 1; j < 10; j++)
+	for (b = a + 1; b < 10; b++)
 	{
-	putchar(i + '0');
-	putchar(j + '0');
-	if (i == 8 && j == 9)
+	putchar(a);
+	putchar(b);
+	if (a == 8 && b == 9)
 	{
 	putchar('\n');
 	}
