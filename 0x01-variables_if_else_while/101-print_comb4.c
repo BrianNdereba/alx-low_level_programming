@@ -8,22 +8,26 @@
 
 int main(void)
 {
-	int a, b;
+	int a, b, c;
 
-	for (a = 0; a < 10; a++)
+	for (a = 0, a < 10, a++)
 	{
-	for (b = a + 1; b < 10; b++)
+	for (b = a + 1, b < 10, b++)
+	{
+	for (c = b + 1, c < 10, c++)
 	{
 	putchar(a + '0');
 	putchar(b + '0');
-	if (a == 8 && b == 9)
+	putchar(c + '0');
+	if (b == 8 && c == 9)
 	{
-	putchar('\n');
+	putchar('\n);
 	}
 	else
 	{
 	putchar(',');
 	putchar(' ');
+	}
 	}
 	}
 	}
