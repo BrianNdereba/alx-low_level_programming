@@ -10,8 +10,8 @@ int main(void)
 {
 	char c, q, e;
 
-q = 'q'
-e = 'e'
+q = 'q';
+e = 'e';
 	for (c = 'a'; c <= 'z'; c++)
 	{
 	if (c != 'e' && c != 'q')
