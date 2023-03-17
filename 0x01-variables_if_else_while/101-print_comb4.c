@@ -21,7 +21,7 @@ int main(void)
 	putchar(c + '0');
 	if (b == 8 && c == 9)
 	{
-	putchar('\n);
+	putchar('\n');
 	}
 	else
 	{
