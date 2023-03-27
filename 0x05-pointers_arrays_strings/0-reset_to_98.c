@@ -2,8 +2,7 @@
 
 /**
  * reset_to_98 - Resets the value of an integer to 98
- * @x: Integer to be reset
- * @*n: Pointer to the  integer value to be reset
+ * @n: Integer value to be reset
  * Return: Nothing
  */
 
