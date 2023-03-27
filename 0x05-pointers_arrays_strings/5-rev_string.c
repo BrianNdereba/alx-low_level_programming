@@ -17,8 +17,8 @@ void rev_string(char *s)
 	for (x = 0; x < len; x++)
 	{
 		len--;
-		reverse = s[1];
-		s[1] = s[len];
+		reverse = s[x];
+		s[x] = s[len];
 		s[len] = reverse;
 	}
 }
