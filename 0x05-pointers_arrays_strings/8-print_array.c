@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_array - print elements in array
@@ -11,7 +12,7 @@ void print_array(int *a, int n)
 {
 	int x;
 
-	for (x = 0; a[i] < a[n]; x++)
+	for (x = 0; a[x] < a[n]; x++)
 	{
 		if (x != (n - 1))
 		{
