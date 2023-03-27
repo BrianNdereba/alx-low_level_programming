@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdef.h>
 
 /**
  * _strcpy - Copy from source to destination
@@ -16,7 +15,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		return (NULL);
 	}
-	for (x = 0; src[x] = '\0'; x++)
+	for (x = 0; src[x] != '\0'; x++)
 	{
 		dest[x] = src[x];
 	}
