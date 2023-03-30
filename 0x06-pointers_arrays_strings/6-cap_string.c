@@ -16,7 +16,11 @@ char *cap_string(char *c)
 		{
 			c[0] = c[0] - 32;
 		}
-		if (c[count] == ' ' || c[count] == '\t' || c[count] == '\n' c[count] == ',' || c[count] == ';' || c[count] == '.' || c[count] == '!' || c[count] == '?' || c[count] == '"' || c[count] == '(' || c[count] == ')' || c[count] == '{' || c[count] == '}')
+		if (c[count] == ' ' || c[count] == '\t' || c[count] == '\n'
+		    || c[count] == ',' || c[count] == ';' || c[count] == '.'
+		    || c[count] == '!' || c[count] == '?' || c[count] == '"'
+		    || c[count] == '(' || c[count] == ')' || c[count] == '{'
+		    || c[count] == '}')
 		{
 			if (c[count + 1] >= 97 && c[count + 1] <= 122)
 			{
