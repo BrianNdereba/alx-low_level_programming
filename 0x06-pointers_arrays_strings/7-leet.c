@@ -10,12 +10,12 @@ char *leet(char *c)
 {
 	char letters[] = "aAeEoOtTlL";
 	char numbers[] = "4433007711";
-	int count = 0;
-	int len = 0;
+	int count;
+	int len;
 
-	while (c[len] != '\0')
+	for (len = 0; c[len] != '\0'; len++)
 	{
-		while (count < 10)
+		for (count = 0; count < 10; count++)
 		{
 			if (letters[count] == c[len])
 			{
