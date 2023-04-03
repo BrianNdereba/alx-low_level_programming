@@ -18,6 +18,10 @@ void print_diagsums(int *a, int size)
 	{
 		sum1 += a[idx];
 		a += size;
+	}
+	a -= size;
+	for (idx = 0; idx < size; idx++)
+	{
 		sum2 += a[idx];
 		a -= size;
 	}
