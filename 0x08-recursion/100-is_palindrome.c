@@ -49,13 +49,16 @@ int _strlen(char *s)
 
 int palindrome(char *s, int x, int len)
 {
-	while (x < len / 2)
+	if (s[x] != s[len - 1])
 	{
-		if (s[x] != s[len - 1 - x])
-		{
-			return (0);
-		}
-		x++;
+		return (0);
 	}
-	return (1);
+	else if (x >= len)
+	{
+		return (1);
+	}
+	else
+	{
+		return (palindrome(s, (x + 1), (len - 1)));
+	}
 }
